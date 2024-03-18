@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/gif" href="recursos/cpu-sonrisa.gif" >
+    <title>DocumentoHTML</title>
+</head>
+<body>
+    <h1 id="home">Aprediendo HTML</h1>
+    <nav>
+        <a href="#intro">Introducción</a>
+        <a href="#tags">Etiquetas</a>
+        <a href="#links">Enlaces</a>
+        <a href="#lists">Listas</a>
+    </nav>
+    <hr>
+    <h2 id="intro">Introducción</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis, dolore sit a vero porro, sed dignissimos doloribus voluptatum optio reiciendis, veritatis odio atque illo maxime hic ipsum aspernatur rem!</p>
+    <hr>
+    <h2 id="tags">Etiquetas</h2>
+    <p>Lorem, ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. Voluptatibus iusto a facilis numquam enim <b>quibusdam</b> rerum ullam ea, consectetur, vero dicta repellat eius minima ab quos qui dolorum ipsam. Atque.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit. Omnis, architecto possimus sequi sapiente, <em>dolorem</em> nostrum corporis eaque iure ab tenetur harum maiores quia mollitia inventore eos recusandae? Sapiente, magnam nam?</p>
+
+    <header><strong>cabeza</strong></header>
+    <nav>
+        section
+        aside
+    </nav>
+    <aside>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque alias illum dignissimos, asperiores adipisci veritatis nihil unde delectus numquam obcaecati minima impedit rerum tempore deserunt dolorem placeat praesentium amet.</p>
+    </aside>
+    <section>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, vel ratione nisi debitis eius eligendi quasi placeat temporibus laborum labore magni expedita quisquam molestiae doloremque, commodi corporis corrupti veritatis perferendis.</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti cum illum, tempora minima veniam quibusdam non provident doloribus soluta nesciunt amet id ipsam temporibus. Aliquid aut vitae perspiciatis dolorem possimus?</p>
+        </article>
+    </section>
+    <footer>pie de página</footer>
+
+    <img src="recursos/img.png" alt="listas" width="250" height="250">
+
+    <hr>
+    <h2 id="links">Enlaces</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit quaerat adipisci maxime quod reprehenderit nulla, omnis eum. Voluptates similique atque dolores. Ut fugiat repellendus, <a href="https://es.wiktionary.org/wiki/facilis" target="_blank">facilis</a> provident magnam assumenda reiciendis!</p>
+    <p><a href="pagina2.html">sequentia</a> o <a href="pagina2.rar">erumpo sequentia</a></p>
+    <hr>
+    <h2 id="lists">Listas</h2>
+    
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <ul type="circle">
+            <li>Item2</li>
+            <li>Item2</li>
+            <li>Item2</li>
+        </ul>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <ol type="I">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+
+    <h2>Imágenes</h2>
+    <img src="recursos/download.jpg" alt="siluetaconlapiz" title="silueta azul sosteniendo un lápiz" width="70" height="100">
+    <br>
+
+    <a href="https://github.com/jjehu/vrep.git">
+        <img src="recursos/click.gif" alt="click" height="70">
+    </a>
+
+    <img src="recursos/click_here.gif" alt="click_here" usemap="#image-map">
+    <map name="image-map">
+        <area shape="poly" coords="268,338,317,322,329,295,306,270,276,263,239,262,218,276,195,289,201,314,226,330" href="https://svgsilh.com/es/9c27b0/tag/siluetas-2.html" alt="imagenes svg" target="_blank">
+    </map>
+    <br>
+
+    <a href="https://www.image-map.net/">Mapear Imagen</a>
+    <br>
+
+    <h2>Tablas</h2>
+    <table border="1">
+        <caption>Horario</caption>
+        <tr>
+            <th colspan="5">Entre semana</th>
+            <th colspan="2">Fin de semana</th>
+        </tr>
+        <tr>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miercoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+            <td>Sábado</td>
+            <td>Domingo</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Programar</td>
+            <td>Programar</td>
+            <td>Programar</td>
+            <td>Programar</td>
+            <td>Programar</td>
+            <td>Descansar</td>
+            <td>Descansar</td>
+        </tr>
+        <tr>
+            
+            <td>Programar</td>
+            <td>Programar</td>
+            <td>Programar</td>
+            <td>Programar</td>
+            <td>Descansar</td>
+            <td>Descansar</td>
+        </tr>
+    </table>
+
+    <h2>Formularios</h2>
+    <form action="myscript.php" method="post">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Ingresa aquí tu nombre">
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+            <br>
+            <label for="email">Correo:</label required>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="password" id="pass" autofocus>
+            <br>
+            <label for="date_n">Fecha de Nacimiento:</label>
+            <input type="date" id="date_n" name="date_n">
+            <br>
+            <label for="cv">Ingresa tu cv</label>
+            <input type="file" name="cv" id="cv">
+            <br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="7"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Color favorito</legend>
+            <input type="radio" name="color" id="red" value="red">
+            <label for="red">Rojo</label>
+            <br>
+            <input type="radio" name="color" id="blue" value="blue">
+            <label for="blue">Azul</label>
+            <br>
+            <input type="radio" name="color" id="green" value="green">
+            <label for="green">Verde</label>
+            <br>
+            <input type="color" name="color">
+            <br>
+            <select name="color2" id="color2">
+                <option value="blue">Azul</option>
+                <option value="red">Rojo</option>
+                <option value="green">Verde</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Hobbies</legend>
+            
+            <input type="checkbox" name="hobby1" id="read" value="read">
+            <label for="read">Leer</label>
+            <br>
+            <input type="checkbox" name="hobby2" id="dance" value="dance">
+            <label for="dance">Bailar</label>
+            <br>
+            <input type="checkbox" name="hobby3" id="coding" value="coding">
+            <label for="coding">Programar</label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Listo">
+        <input type="submit" value="Borrar">
+    </form>
+
+    <h2>Audio y Video</h2>
+    <audio controls autoplay muted loop>
+        <source src="recursos/demo.mp3" type="audio/mp3">
+        <source src="recursos/demo.ogg" type="audio/ogg">
+        El navegador no puede reproducir el audio.
+    </audio>
+    <audio src="recursos/demo.mp3" controls></audio>
+    <br>
+
+    <video src="recursos/dog.mp4" controls></video>
+    <video loop autoplay>
+        <source src="recursos/dog.mp4" type="video/mp4">
+        <source src="recursos/dog.wav" type="video/wav">
+        El navegador no puede reproducir el video.
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=zBdM50jyghFJoMvn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Gráficos</h2>
+    <p>pueden ser canvas o svg, en este caso solo serán svg.</p>
+    <svg width="500" height="500">
+        <circle cx="150" cy="150" r="100" stroke="blue" stroke-width="4" fill="red"/>
+        <line x1="150" y1="150" x2="250" y2="150" stroke="blue" stroke-width="4"/>
+        <text x="150" y="140" fill="white">r=100</text>
+
+        <polyline points="310,150 350,150 350,110 390,110 390,70 310,70 310,150" stroke="blue" stroke-width="4" fill="white"/>
+    </svg>
+    <svg width="500" height="500">
+        <circle cx="100" cy="350" r="3"/>
+        <circle cx="250" cy="50" r="3"/>
+        <text x="100" y="350" dx="-20">A</text>
+        <text x="250" y="50" dy="20">B</text>
+        <path d="M 100 350 Q 50 -50 250 50" stroke="blue" stroke-width="5" fill="none"></path>
+    </svg>
+    <br>
+    
+<svg fill="#000000" width="250" height="250" viewBox="0 0 24 24" enable-background="new 0 0 24 24">
+<g>
+	<g>
+		<g>
+			<path d="M16,24H8c-2.2,0-4-1.8-4-4v-7c0-2.2,1.8-4,4-4h8c2.2,0,4,1.8,4,4v7C20,22.2,18.2,24,16,24z M8,11c-1.1,0-2,0.9-2,2v7
+				c0,1.1,0.9,2,2,2h8c1.1,0,2-0.9,2-2v-7c0-1.1-0.9-2-2-2H8z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M12,11H7c-0.6,0-1-0.4-1-1V6c0-3.3,2.7-6,6-6c3.4,0,6,2.7,6,6c0,0.6-0.4,1-1,1s-1-0.4-1-1c0-2.2-1.8-4-4-4
+				C9.8,2,8,3.8,8,6v3h4c0.6,0,1,0.4,1,1S12.6,11,12,11z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<circle cx="12" cy="15" r="2"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path d="M12,20c-0.6,0-1-0.4-1-1v-3c0-0.6,0.4-1,1-1s1,0.4,1,1v3C13,19.6,12.6,20,12,20z"/>
+		</g>
+	</g>
+</g>
+</svg>
+<br>
+    <a href="https://www.svgrepo.com/">Página SVG</a>
+
+    <br>
+    <a href="#home">Inicio</a>
+</body>
+</html>
