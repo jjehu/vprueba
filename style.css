@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*colores*/
+.name{
+    background-color: lightgreen;
+}
+.hex{
+    background-color: #F67B20;
+}
+.rgb{
+    background-color: rgb(15, 152, 16);
+}
+.rgba{
+    background-color: rgba(5, 34, 126, 0.7);
+}
+.hsl{
+    background-color: hsl(16, 100%, 50%);
+}
+.hsla{
+    background-color: hsla(16, 100%, 50%, 0.5);
+}
+/*TEXTO*/
+/*importar tipo de letra*/
+h1{
+    font-family: "Gentium Book Plus", serif;
+    font-size: 64px;
+    font-style: italic;
+    text-align: center;
+    color: #D8AD43;
+    text-shadow: 5px 2px black;
+}
+p.capital2{
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    text-align: justify;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+p.capital::first-letter{
+    color: #D8AD43;
+    font-size: 80px;
+    float: left; /*poner la letra mas cerca del resto de texto*/
+    background-color: brown;
+    padding-top: 5px; /*espacio en la parte superior*/
+    padding-bottom: 5px; /*espacio en la parte inferior*/
+    margin-right: 5px; /*añadiendo margen a la derecha*/
+    margin-top: 5px; /*añadiendo margen a la parte superior*/
+}
+a{
+    text-decoration: none;
+    color: brown;
+    text-transform: uppercase; /*mayuscula*/
+    font-weight: bold;
+}
+a:hover{/*hover reconoce cuando el raton pasa encima, en este caso la etiqueta a*/
+    color: bisque;
+}
+.underline{
+    text-decoration: underline;
+}
+.italic{
+    font-style: italic;
+}
+.border{
+    border: 10px solid gray;
+    /*
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    */
+    margin: 10% 10% 10% 10%;
+}
+
+/*UNIDADES DE MEDIDA*/
+.pixeles{
+    font-size: 32px;
+    background-color: gray;
+    width: 700px;
+}
+.porcentajes{
+    font-size: 200%;
+    background-color: gray;
+    width: 50%;
+}
+.em{
+    font-size: 1.5em; /*1em = valor del contenedor*/
+    background-color: gray;
+    width: 1em;
+}
+.rem{
+    font-size: 0.8rem; /*1 rem = valor de root*/
+    background-color: gray;
+    width: 1rem;
+}
+/*MODELO CAJA*/
+.primer{
+    background-color: lightsalmon;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    /*padding: 5px 10px 15px 20px;*/
+}
+.segundo{
+    background-color: lightgreen;
+    border-width: 3px;
+    border-style: solid; /*borde solido*/
+    border-color: blue;
+    /*border: 3px solid blue;*/
+    border-radius: 4px;
+    margin: 15px;
+    display: inline-block;
+}
+.tercero{
+    background-color: lightseagreen;
+    border: 3px solid blue;
+    border-radius: 4px;
+    margin: 15px;
+    /*margin al igual que el border se puede dar valores por separado*/
+    width: 50px;
+    height: 50px;
+    display: inline-block; /*pone uno seguido del otro y respeta los margenes de ambos elementos*/
+}
+/*ESTILOS A ENLACES*/
+body{
+    background-color: gray;
+}
+/*---------------Menu Principal---------------*/
+.menu{
+    background-color: black;
+    display: inline-flex;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+.menu a.active{
+    background-color: white;
+    color: black;
+}
+/*---------------Redes Sociales---------------*/
+.social{
+    margin: 30px 0;
+}
+.social a{
+    padding: 30px 10px;
+    color: black;
+}
+.social a:hover{
+    color: white;
+}
+/*---------------Boton---------------*/
+
+.boton a{
+    text-decoration: none;
+    color: white;
+    background-color: crimson;
+    padding: 4px;
+    border-radius: 10px;
+}
+.boton a:hover{
+    color: crimson;
+    background-color: white;
+}
+/*POSITION*/
+div.static{
+    padding-left: 5px;
+}
+.static{
+    background-color: lightgreen;
+    /*resetear border en el body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /*estetica
+    font-family: 'Sangoe UI';
+    font-weight: 600;
+    background-color: wheat;
+    }
+    */
+    position: static;
+}
+.relative{
+    background-color: lightcoral;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.absolute{
+    background-color: lightskyblue;
+    opacity: 50%;
+    /*abajo de relative porque el relative estamos modificando su top y left*/
+    position: absolute;
+    /* top: 30px;
+    left: 30px;
+    se ubicara con respecto al contenedor
+    */
+}
+.sticky{
+    background-color: lightseagreen;
+    position: sticky;
+    top: 50px;
+}
+.espacio{
+    background-color: black;
+    height: 1000px;
+}
+.fixed{
+    background-color: lightgoldenrodyellow;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    right: 0px;
+}

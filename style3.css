@@ -1,0 +1,99 @@
+/*TRANSITION*/
+.contenedor{
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+
+    transition-property: background-color, height, width;/*o all*/
+    transition-duration: 2000ms, 1000ms, 2000ms;
+    transition-delay: 0ms, 1000ms, 1000ms;
+}
+.contenedor:hover{
+    background-color: green;
+    height: 300px;
+    width: 300px;
+}
+.contenedor2{
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+
+    transition-property: background-color, width;
+    transition-duration: 1000ms, 2000ms;
+    transition-timing-function: cubic-bezier(.13,1.02,.9,.29);
+}
+.contenedor2:hover{
+    background-color: lime;
+    width: 100%;
+}
+.bcb{
+    height: 100%;
+    width: 100%;
+}
+.contenedor3{
+    border: 1px solid;
+    height: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.barra{
+    height: 100%;
+    width: 5%;
+    background-color: lawngreen;
+    transition: width 1000ms cubic-bezier(0.16, 1, 0.94, 0.45) 1000ms;
+}
+.barra:hover{
+    width: 100%;
+}
+/*TRANSFORM*/
+/*
+2D
+- translate()
+- rotate()
+- scale()
+- skew()
+- matrix()
+3D
+- rotateX()
+- rotateY()
+- rotateZ()
+*/
+.backbox{
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    height: 300px;
+    width: 300px;
+    background: #faf3dd;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    z-index: -1;
+}
+.box{
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    height: 300px;
+    width: 300px;
+    background: #b8f2e6af;
+    color: rgb(5, 3, 5);
+    padding-top: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: transform 350ms;
+    transform-origin: top left;
+}
+.box:hover{
+    /* transform: translate(100px, 200px); */
+    /* transform: rotate(45deg); */
+    /* transform: scale(2 ,1); */
+    /* transform: skew(-45deg); */
+    /* transform: matrix(2, .45, .45, 2, 200, 20); */
+    /* transform: rotateZ(180deg); */
+    transform: translate(-250px, -300px);
+}

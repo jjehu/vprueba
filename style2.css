@@ -1,0 +1,28 @@
+body{
+    background-color: lightseagreen;
+    background-image: url(landscape_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;/*tamaño de la pantalla*/
+}
+.photo{
+    /* background-image: url("back_1.jpg"); */
+    width: 500px;
+    height: 700px;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    /* background-position: top; */
+    /* background: linear-gradient(to right, rgb(85, 59, 4), rgb(53, 223, 186)); */
+    background: linear-gradient(to right, rgba(173, 172, 170, .4), rgba(173, 172, 170, .4)), url("back_1.jpg");
+    padding: 10px;
+    box-sizing: border-box;
+}
+.profile{
+    background-image: url(zhu-liang.jpg);
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-position: 80% 30%;/*puede ser center*/
+    border-radius: 50%;
+}
