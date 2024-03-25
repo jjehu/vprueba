@@ -1,4 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*-------------------*/
+.nav{
+    position: fixed;
+    bottom: 0px;
+    border: 3px dashed rgb(187, 102, 230);
+    border-radius: 50%;
+    width: 35px;
+    text-decoration: none;
+    background-color: black;
+    color: darkorchid;
+    text-align: center;
+    font-size: 30px;
+    padding: 2px;
+}
+.nav:hover{
+    background-color: darkorchid;
+    color: black;
+    border-color: black;
+}
+#anterior{
+    left: 0px;
+}
+#siguiente{
+    right: 0px;
+}
+/*-------------------*/
 /*colores*/
 .name{
     background-color: lightgreen;
