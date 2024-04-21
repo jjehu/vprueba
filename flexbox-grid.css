@@ -1,0 +1,96 @@
+.nav{
+    position: fixed;
+    bottom: 0px;
+    border: 3px dashed rgb(187, 102, 230);
+    border-radius: 50%;
+    width: 35px;
+    text-decoration: none;
+    background-color: black;
+    color: darkorchid;
+    text-align: center;
+    font-size: 30px;
+    padding: 2px;
+}
+.nav:hover{
+    background-color: darkorchid;
+    color: black;
+    border-color: black;
+}
+#anterior{
+    left: 0px;
+}
+#siguiente{
+    right: 0px;
+}
+/*---------------*/
+.padre{
+    width: 500px;
+    height: 600px;
+    background-color: rgb(143, 227, 255);
+    margin: auto;
+}
+.padre div{
+    background-color: rgb(40, 163, 172);
+    color: rgb(161, 20, 20);
+    margin: 3px;
+    padding: 3px;
+}
+.padre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-content: center;
+}
+.martes{
+    flex-grow: 0;
+    order: 1;
+}
+.miercoles{
+    /*
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    */
+    flex: 0 1 300px;
+}
+.fg{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background-color: lime;
+    font-weight: bold;
+    width: max-content;
+    padding: 5px;
+    margin: 10px auto;
+    border: 5px inset limegreen;
+    border-radius: 10px;
+}
+.fg:hover{
+    background-color: limegreen;
+    color: black;
+}
+
+.container{
+    width: 500px;
+    height: 600px;
+    background-color: rgb(143, 227, 255);
+    margin: auto;
+}
+.container div{
+    background-color: rgb(201, 116, 116);
+    margin: 1px 5px;
+    padding: 7px;
+    border: 1px solid black;
+    text-align: center;
+}
+.container{
+    display: grid;
+    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: 500px 300px 200px; */
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto 100px;
+    gap: 20px 30px;
+    align-items: center;
+}
