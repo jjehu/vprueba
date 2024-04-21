@@ -19,6 +19,9 @@
 #anterior{
     left: 0px;
 }
+#siguiente{
+    right: 0px;
+}
 /*TRANSITION*/
 .contenedor{
     border: 1px solid;
